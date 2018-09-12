@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Wedding:war" />
-      <artifact name="Wedding:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fef04a-f904-4c9e-a7e5-ad2be9aaf0ae" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="f7fe1436-bb72-4df5-983f-ce677fed71e4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,81 +29,14 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Jsp File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/qianfeng/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qianfeng/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/c3p0-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/datasource/C3P0DatasourceConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qianfeng/DAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qianfeng/WeddingTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/utils/DBUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/dao/impl/UserDAOimpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qianfeng/ServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/controller/UserLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/web/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/web/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/config/SpringmvcDispatcherInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/config/RootConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/log.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sdf.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/ll.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/controller/vcodeController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/do.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/controller/UserLoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/services/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springboot/SpringBootApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/controller/UserRegisterController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/pojo/Hotel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/dao/impl/HotelDAOimpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/dao/HotelDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/services/HotelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qianfeng/springmvc/controller/storePageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/wedding-3.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/hotel.jsp" />
-        <option value="$PROJECT_DIR$/readme.md" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -144,10 +71,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -228,23 +158,6 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="maven project&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExamSystem" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.20689656" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA_WorkSpace\Wedding\src\main\webapp" />
@@ -276,101 +189,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootApp">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="DAOTest.testUserByuser_tel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wedding" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qianfeng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qianfeng" />
-      <option name="MAIN_CLASS_NAME" value="com.qianfeng.DAOTest" />
-      <option name="METHOD_NAME" value="testUserByuser_tel" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DAOTest.testUserSingleQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wedding" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qianfeng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qianfeng" />
-      <option name="MAIN_CLASS_NAME" value="com.qianfeng.DAOTest" />
-      <option name="METHOD_NAME" value="testUserSingleQuery" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServiceTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wedding" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qianfeng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qianfeng" />
-      <option name="MAIN_CLASS_NAME" value="com.qianfeng.ServiceTest" />
-      <option name="METHOD_NAME" value="testLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServiceTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Wedding" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qianfeng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qianfeng" />
-      <option name="MAIN_CLASS_NAME" value="com.qianfeng.ServiceTest" />
-      <option name="METHOD_NAME" value="testRegister" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -387,11 +208,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="SpringBootApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Wedding" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qianfeng.springboot.SpringBootApp" />
-      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -415,95 +231,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="Wedding:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_Wedding" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63427" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Wedding:war exploded" />
-          <artifact name="Wedding:war" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.SpringBootApp" />
-      <item itemvalue="JUnit.DAOTest.testUserByuser_tel" />
-      <item itemvalue="JUnit.DAOTest.testUserSingleQuery" />
-      <item itemvalue="JUnit.ServiceTest.testLogin" />
-      <item itemvalue="JUnit.ServiceTest.testRegister" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.ServiceTest.testLogin" />
-        <item itemvalue="JUnit.ServiceTest.testRegister" />
-        <item itemvalue="JUnit.DAOTest.testUserByuser_tel" />
-        <item itemvalue="JUnit.DAOTest.testUserSingleQuery" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -521,47 +248,15 @@
       <workItem from="1536664549244" duration="7708000" />
       <workItem from="1536675154250" duration="461000" />
       <workItem from="1536676516874" duration="4900000" />
-      <workItem from="1536714976918" duration="10276000" />
+      <workItem from="1536714976918" duration="11890000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="DAOTest_testUserSingleQuery - 2018.09.10 at 20h 29m 25s.xml">
-      <configuration name="DAOTest.testUserSingleQuery" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DAOTest_testUserSingleQuery - 2018.09.10 at 20h 30m 31s.xml">
-      <configuration name="DAOTest.testUserSingleQuery" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DAOTest_testUserByuser_tel - 2018.09.10 at 20h 31m 01s.xml">
-      <configuration name="DAOTest.testUserByuser_tel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DAOTest_testUserByuser_tel - 2018.09.11 at 09h 40m 34s.xml">
-      <configuration name="DAOTest.testUserByuser_tel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DAOTest_testUserByuser_tel - 2018.09.11 at 09h 41m 22s.xml">
-      <configuration name="DAOTest.testUserByuser_tel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest_testLogin - 2018.09.11 at 10h 54m 32s.xml">
-      <configuration name="ServiceTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest_testLogin - 2018.09.11 at 10h 54m 59s.xml">
-      <configuration name="ServiceTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest_testLogin - 2018.09.11 at 10h 55m 50s.xml">
-      <configuration name="ServiceTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest_testRegister - 2018.09.11 at 11h 01m 08s.xml">
-      <configuration name="ServiceTest.testRegister" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest_testLogin - 2018.09.11 at 11h 06m 32s.xml">
-      <configuration name="ServiceTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56232000" />
+    <option name="totallyTimeSpent" value="188000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -582,8 +277,8 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29459903" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29508197" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.2306003" />
@@ -600,11 +295,11 @@
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.3289689" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -785,95 +480,5 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>Wedding:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.20689656" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (Wedding)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.20689656" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Wedding</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.20689656" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.20689656" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
