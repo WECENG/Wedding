@@ -32,28 +32,37 @@ public class CartController {
 
     @RequestMapping(value = "/queryCart", method = RequestMethod.GET)
     public String queryCart(Model model, HttpServletRequest req) throws SQLException {
-        int user_id = Integer.parseInt(req.getParameter("user_id"));
-        List<Cart> carts = cartService.findCartByUser_id(user_id);
-        model.addAttribute("carts", carts);
-        return "cart";
+        String user_id = req.getParameter("user_id");
+        if(user_id.equals("")){
+            model.addAttribute("msg","查看购物车，请先登录");
+            return "login";
+        }else {
+            List<Cart> carts = cartService.findCartByUser_id(Integer.parseInt(user_id));
+            model.addAttribute("carts", carts);
+            return "cart";
+        }
     }
 
     @RequestMapping(value = "/addCart", method = RequestMethod.GET)
     public String addCart(Model model, HttpServletRequest req) throws SQLException {
         HotelPackage hotelPackage = (HotelPackage) req.getSession().getAttribute("hotelPackage");
-        int user_id = (Integer)req.getSession().getAttribute("user_id_ses");
+        Object user_id = req.getSession().getAttribute("user_id_ses");
+        if(user_id==null){
+            model.addAttribute("msg","查看购物车，请先登录");
+            return "login";
+        }
         Hotel hotel = hotelService.findHotelByHotel_id(hotelPackage.getHotel_id());
         String currentTime = req.getParameter("currentTime");
         String packageNum=req.getParameter("packageNum");
-        //通过package_name也是cart_name判断该购物车是否存在，若存在只修改单个购物车的数量
-        Cart cart=cartService.findCartByCart_name(hotelPackage.getPackage_name());
+        //通过package_name也是cart_name和user_id判断该购物车是否存在，若存在只修改单个购物车的数量
+        Cart cart=cartService.findCartByCart_nameAndUser_id(hotelPackage.getPackage_name(),(Integer) user_id);
         if(cart!=null){
             cartService.updateCart(
                     Integer.parseInt(cart.getCart_count())+Integer.parseInt(packageNum),
                     cart.getCart_id());
         }else{
             Cart newCart = new Cart();
-            newCart.setUser_id(user_id);
+            newCart.setUser_id((Integer) user_id);
             newCart.setCart_time(currentTime);
             newCart.setCart_name(hotelPackage.getPackage_name());
             newCart.setCart_type(hotelPackage.getPackage_content());

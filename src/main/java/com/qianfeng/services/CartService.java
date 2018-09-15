@@ -25,14 +25,14 @@ public interface CartService {
 
     /**
      *
-     * 功能描述:通过购物车名称查询购物车
+     * 功能描述:通过购物车名称和用户id查询购物车
      *
-     * @param: cart_name:购物车名称
+     * @param: cart_name:购物车名称 user_id:用户id
      * @return: 返回购物车对象
      * @auther: werson
      * @date:
      */
-    Cart findCartByCart_name(String cart_name) throws SQLException;
+    Cart findCartByCart_nameAndUser_id(String cart_name,int user_id) throws SQLException;
 
     /**
      *

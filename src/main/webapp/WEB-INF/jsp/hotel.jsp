@@ -45,57 +45,46 @@
 
 </script>
 <body>
-
+<!--顶部通长-->
 <div id="public-navbar">
+    <!--居中容器-->
     <div class="layout_center layout_clear" style="overflow:visible">
-        <div class="layout_fl">你好，欢迎来到 婚礼汇</div>
+        <!--左对齐内容-->
+        <div class="layout_fl">
+            你好，欢迎来到 婚礼汇
+        </div>
         <ul class="layout_fr fl_li">
             <li>
                 <div class="use-layout">
-                    <a>
-                        <span class="use-status">会员中心</span>
-                    </a>
-                    <div class="use-option" style="display:none">
-                        <a>会员登录</a>
-                        <a>免费注册</a>
+                    <a href="javascript:;"><span class="use-status">会员中心</span></a>
+                    <div class="use-option" style="display: none">
+                        <a href="/welcome" class="use-item" target="_parent">会员登录</a>
+                        <a href="/register" target="_parent">免费注册</a>
                     </div>
                     <i class="use-arrow page_icon"></i>
-                </div>
-            </li>
-            <li>
-                <span class="use-hr"></span>
-            </li>
-            <li>
-                <a href="/queryCart?user_id=${sessionScope.user_id_ses}">我的购物车</a>
-            </li>
-            <li>
-                <span class="use-hr"></span>
-            </li>
+                </div></li>
+            <li><span class="use-hr"></span></li>
+            <li><a href="/queryCart?user_id=${sessionScope.user_id_ses}">我的购物车</a></li>
+            <li><span class="use-hr"></span></li>
             <li>
                 <div class="use-layout">
-                    <a>
-                        <span class="use-status">商户平台</span>
-                    </a>
+                    <a href="javascript:;"><span class="use-status">商户平台</span></a>
                     <div class="use-option" style="display: none;">
-                        <a>商户登录</a>
-                        <a>免费入驻</a>
+                        <a href="#" class="use-item" target="_parent">商户登录</a>
+                        <a href="#" target="_parent">免费入驻</a>
                     </div>
                     <i class="use-arrow page_icon"></i>
-                </div>
-            </li>
-            <li>
-                <span class="use-hr"></span>
-            </li>
-            <li>
-                <a>联系我们</a>
-            </li>
+                </div></li>
+            <li><span class="use-hr"></span></li>
+            <li><a href="#">联系我们</a></li>
         </ul>
+        <!--右对齐内容-->
     </div>
 </div>
 
 <div id="public-toolbar" class="hidden_active">
     <div class="layout_center layout_clear">
-        <div class="page-logo layout_fl"><a><img src="images/rxT54692503vu.jpg"></a></div>
+        <div class="page-logo layout_fl"><a><img src="images/logo.jpg"></a></div>
         <div class="page-search layout_fl">
             <div class="page-search-bar layout_clear">
                 <div class="page-search-text layout_fl">

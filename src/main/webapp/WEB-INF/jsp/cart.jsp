@@ -38,8 +38,8 @@
                 <div class="use-layout">
                     <a href="javascript:;"><span class="use-status">会员中心</span></a>
                     <div class="use-option" style="display: none">
-                        <a href="#" class="use-item" target="_parent">会员登录</a>
-                        <a href="#" target="_parent">免费注册</a>
+                        <a href="/welcome" class="use-item" target="_parent">会员登录</a>
+                        <a href="/register" target="_parent">免费注册</a>
                     </div>
                     <i class="use-arrow page_icon"></i>
                 </div></li>

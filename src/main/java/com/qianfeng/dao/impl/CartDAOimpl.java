@@ -31,10 +31,10 @@ public class CartDAOimpl implements CartDAO {
     }
 
     @Override
-    public Cart selectCartByCart_name(String cart_name) throws SQLException {
+    public Cart selectCartByCart_nameAndUser_id(String cart_name, int user_id) throws SQLException {
         QueryRunner runner = new QueryRunner(dataSource);
-        return runner.query("select * from tb_shoppingcart where cart_name=?",
-                new BeanHandler<>(Cart.class),cart_name);
+        return runner.query("select * from tb_shoppingcart where cart_name=? and user_id=?",
+                new BeanHandler<>(Cart.class),cart_name,user_id);
     }
 
     @Override

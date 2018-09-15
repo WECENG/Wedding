@@ -26,8 +26,8 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public Cart findCartByCart_name(String cart_name) throws SQLException {
-        return cartDAO.selectCartByCart_name(cart_name);
+    public Cart findCartByCart_nameAndUser_id(String cart_name,int user_id) throws SQLException {
+        return cartDAO.selectCartByCart_nameAndUser_id(cart_name,user_id);
     }
 
     @Override
