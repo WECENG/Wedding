@@ -20,8 +20,39 @@
     <link rel="stylesheet" type="text/css" href="../../images/style.css"/>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../images/hlh.js"></script>
+    <script type="text/javascript" src="/js/ajaxPackage.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+<%--ajax注册校验--%>
+<script type="text/javascript">
+    function ajaxValidate(){
+        /*使用自己封装的ajax*/
+        // var user_tel=document.getElementById("user_tel").value;
+        // ajax({
+        //     url:"/ajaxValidate",
+        //     method:"post",
+        //     data:"user_tel="+user_tel,
+        //     success:function(data){
+        //         var msg=document.getElementById("validate");
+        //         msg.innerHTML=data;
+        //     }
+        // });
+
+        /*使用Jquery的ajax*/
+        var user_tel=document.getElementById("user_tel").value;
+        $.ajax({
+            url:"/ajaxValidate",
+            type:"post",
+            data:"user_tel="+user_tel,
+            contentType:"application/x-www-form-urlencoded",
+            success: function(data){
+                var msg=document.getElementById("validate");
+                msg.innerHTML=data;
+            }
+            });
+    }
+</script>
 <!-- —————————————————————— 顶部内容 —————————————————————— -->
 <div id="public-toolbar">
     <div class="layout_center layout_clear">
@@ -43,12 +74,12 @@
             <div class="user-form-wraps">
                 <div class="user-form-item">
                     <strong class="user-form-title">会员注册</strong></div>
-                <div>${msg}</div>
-                <form data-form="userlogin" action="doregister" method="post">
+                <div id="validate" style="color: red">${msg}</div>
+                <form data-form="userlogin" action="doregister" method="post" onsubmit="return checkInput()">
                     <div class="user-form-item">
-                        <input class="user-input" name="user_tel" type="text" max="15" maxlength="15" placeholder="手机号"></div>
+                        <input class="user-input" name="user_tel" id="user_tel" onblur="ajaxValidate()" type="text" max="15" maxlength="15" placeholder="手机号"></div>
                     <div class="user-form-item">
-                        <input class="user-input" name="password" type="password" max="15" maxlength="15" placeholder="密码"></div>
+                        <input class="user-input" name="password" id="password" type="password" max="15" maxlength="15" placeholder="密码"></div>
                     <div class="user-form-item">
                         <input class="user-input" name="repassword" type="password" max="15" maxlength="15" placeholder="确认密码"></div>
                     <div class="user-form-item">
@@ -208,5 +239,28 @@
         </div>
     </div>
 </div>
+<%--表单验证--%>
+<script type="text/javascript">
+    function checkInput() {
+        var user_tel=document.getElementById("user_tel").value;
+        var password=document.getElementById("password").value;
+        if(user_tel==null){
+            alert("电话号码不能为空");
+            return false;
+        }
+        if(password==null){
+            alert("密码不能为空");
+            return false;
+        }
+        if(!/^1[35678]\d{9}$/.test(user_tel)){
+            alert("电话号码格式错误");
+            return false;
+        }if(!/^\w{6,12}$/.test(password)){
+            alert("密码格式错误");
+            return false;
+        }
+        return true;
+    }
+</script>
 </body>
 </html>

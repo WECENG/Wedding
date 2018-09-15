@@ -13,6 +13,14 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Random;
 
+
+/**
+ *
+ * 功能描述: 验证码控制器
+ *
+ * @auther: werson
+ * @date:  2018/09/11
+ */
 @Controller
 public class vcodeController {
     private static final String CODES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";

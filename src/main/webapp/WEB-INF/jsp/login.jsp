@@ -43,14 +43,14 @@
             <div class="user-form-wraps">
                 <div class="user-form-item">
                     <strong class="user-form-title">会员登录</strong></div>
-                <div>${msg}</div>
-                <form data-form="userlogin" action="login" method="post">
+                <div style="color: red">${msg}</div>
+                <form data-form="userlogin" action="login" method="post" onsubmit="return checkInput()">
                     <div class="user-form-item">
-                        <input class="user-input" name="user_tel" type="text" max="15" maxlength="15" placeholder="手机号"></div>
+                        <input class="user-input" id="user_tel" name="user_tel" type="text" max="15" maxlength="15" placeholder="手机号"></div>
                     <div class="user-form-item">
-                        <input class="user-input" name="password" type="password" max="15" maxlength="15" placeholder="密码"></div>
+                        <input class="user-input" id="password" name="password" type="password" max="15" maxlength="15" placeholder="密码"></div>
                     <div class="user-form-item">
-                        <input class="user-input user-input-adjust" name="vcode" type="text" max="4" placeholder="验证码"><img class="qrcode" src="vcode" id="prove" title="换一张" alt="加载中" onclick="changeCode(this)" style="cursor:pointer;"></div>
+                        <input class="user-input user-input-adjust" id="vcode" name="vcode" type="text" max="4" placeholder="验证码"><img class="qrcode" src="vcode" id="prove" title="换一张" alt="加载中" onclick="changeCode(this)" style="cursor:pointer;"></div>
                     <div class="user-form-item">
                         <label>
                             <input class="user-check" name="aggree" type="checkbox" checked="false" value="yes">&nbsp;
@@ -60,7 +60,7 @@
                     </div>
                     <input type="hidden" name="url" value="<%=request.getHeader("Referer") %>">
                     <div class="user-form-item">
-                        <input class="user-form-button" type="submit" value="登&nbsp;&nbsp;录" id="user-login" style="font-weight: bold;width: 330px">
+                        <input class="user-form-button"  type="submit" value="登&nbsp;&nbsp;录" id="user-login" style="font-weight: bold;width: 330px">
                         <div class="msg">
                             <!--
 						<%=request.getAttribute("msg") == null ? "" : request.getAttribute("msg") %>
@@ -219,5 +219,36 @@
         </div>
     </div>
 </div>
+<%--表单验证--%>
+<script type="text/javascript">
+    function checkInput() {
+        var user_tel=document.getElementById("user_tel").value;
+        var password=document.getElementById("password").value;
+        var vcode=document.getElementById("vcode").value;
+        if(user_tel==null){
+            alert("电话号码不能为空");
+            return false;
+        }
+        if(password==null){
+            alert("密码不能为空");
+            return false;
+        }
+        if(vcode==null){
+            alert("验证码不能为空");
+            return false;
+        }
+        if(!/^1[35678]\d{9}$/.test(user_tel)){
+            alert("电话号码格式错误");
+            return false;
+        }if(!/^\w{6,12}$/.test(password)){
+            alert("密码格式错误");
+            return false;
+        }if(!/^[A-Z0-9]{4}$/.test(vcode)){
+            alert("验证码格式错误");
+            return false;
+        }
+        return true;
+    }
+</script>
 </body>
 </html>

@@ -21,4 +21,9 @@ public class HotelServiceImpl implements HotelService {
     public List<Hotel> findAllHotels() throws SQLException {
         return hotelDAO.selectAllHotels();
     }
+
+    @Override
+    public Hotel findHotelByHotel_id(int hotel_id) throws SQLException {
+        return hotelDAO.selectHotelByHotel_id(hotel_id);
+    }
 }

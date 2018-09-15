@@ -13,7 +13,37 @@
     <title>婚宴场地</title>
     <link href="css/wedding-4.css" rel="stylesheet"/>
     <link rel="icon" href="images/favicon.ico" />
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+<script type="text/javascript">
+    function lastPage() {
+        var lastPage=document.getElementById("lastPage");
+        var currentPage=${hotelPages.currentPage};
+        if(currentPage==0){
+            lastPage.disabled=true;
+        }else{
+            window.location.href="/hotelPage?currentPage="+(currentPage-1);
+        }
+    }
+
+    function nextPage() {
+        var lastPage=document.getElementById("lastPage");
+        var currentPage=${hotelPages.currentPage};
+        var pageCount=${hotelPages.pageCount};
+        if(currentPage==pageCount-1){
+            lastPage.disabled=true;
+        }else{
+            window.location.href="/hotelPage?currentPage="+(currentPage+1);
+        }
+
+    }
+
+</script>
 <body>
 
 <div id="public-navbar">
@@ -36,7 +66,7 @@
                 <span class="use-hr"></span>
             </li>
             <li>
-                <a>我的购物车</a>
+                <a href="/queryCart?user_id=${sessionScope.user_id_ses}">我的购物车</a>
             </li>
             <li>
                 <span class="use-hr"></span>
@@ -96,8 +126,8 @@
     <div class="layout_center layout_clear">
         <div class="button layout_fl">全部分类</div>
         <ul class="layout_clear layout_fl fl_li">
-            <li><a>首页</a></li>
-            <li><a href="field.jsp">婚宴场地</a></li>
+            <li><a href="/index">首页</a></li>
+            <li><a href="/hotelPage?currentPage=0">婚宴场地</a></li>
             <li><a>婚纱摄影</a></li>
             <li><a>婚庆用车</a></li>
             <li><a>婚庆公司</a></li>
@@ -112,9 +142,9 @@
 <div id="page-god">
     <div class="layout_center">
         <div class="path">
-            <span><a href="wedding.html">婚礼汇</a></span>
+            <span><a href="/index">婚礼汇</a></span>
             <em>></em>
-            <a href="field.html" class="page_cur">婚宴场地</a>
+            <a href="/hotelPage?currentPage=0" class="page_cur">婚宴场地</a>
         </div>
         <div class="god-select">
             <div class="god-select-ctrl layout_clear">
@@ -123,9 +153,11 @@
                     <a href="wedding.html">最新<span class="in-unctrl-up page_icon"></span></a>
                 </div>
                 <div class="god-unctrl-r layout_fr">
-                    <span class="c-sort">1/11</span><span class="c-page">
-                        	<span class="c-page-l page_icon" title="上一页"></span><span class="c-page-r page_icon" title="下一页"></span>
-                        </span>
+                    <span class="c-sort">${hotelPages.currentPage+1}/${hotelPages.pageCount}</span>
+                    <span class="c-page">
+                        	<span class="c-page-l page_icon" id="lastPage" title="上一页" onclick="lastPage()"></span>
+                            <span class="c-page-r page_icon" id="nextPage" title="下一页" onclick="nextPage()"></span>
+                    </span>
                     <a href="wedding.html">
                         切换到商品展示&nbsp;<span class="show-seller page_icon" title="切换到商品展示"></span>
                     </a>
@@ -136,11 +168,11 @@
         <div class="god-gdx-wrap">
 
             <ul class="god-aside-listr">
-                <c:forEach var="hotel" items="${hotels}">
+                <c:forEach var="hotel" items="${hotelPages.data}">
                 <li>
                     <div class="gdx-lists-wrap layout_clear">
                         <div class="gdx-lists-img layout_fl">
-                            <a href="wedding.html"><img src="images/${hotel.hotel_img}" style="display:block"></a>
+                            <a href="/hotelDetails?hotel_id=${hotel.hotel_id}"><img src="images/${hotel.hotel_img}" style="display:block"></a>
                         </div>
                         <div class="gdx-lists-data">
                             <h2>
@@ -165,6 +197,43 @@
                     </div>
                 </li>
                 </c:forEach>
+                <div style="width: 100%;text-align: center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                    <c:if test="${hotelPages.currentPage==0}">
+                        <li class="disabled">
+                    </c:if>
+                    <c:if test="${hotelPages.currentPage!=0}">
+                        <li>
+                    </c:if>
+                            <a href="/hotelPage?currentPage=${hotelPages.currentPage-1}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <c:forEach var="hotel" begin="0" end="${hotelPages.pageCount-1}" step="1">
+                            <c:if test="${hotelPages.currentPage==hotel}">
+                                <li class="active">
+                            </c:if>
+                            <c:if test="${hotelPages.currentPage!=hotel}">
+                                <li>
+                            </c:if>
+                                <a href="/hotelPage?currentPage=${hotel}">${hotel+1}</a>
+                            </li>
+                        </c:forEach>
+
+                        <c:if test="${hotelPages.currentPage==(hotelPages.pageCount-1)}">
+                        <li class="disabled">
+                        </c:if>
+                        <c:if test="${hotelPages.currentPage!=(hotelPages.pageCount-1)}">
+                        <li>
+                        </c:if>
+                            <a href="/hotelPage?currentPage=${hotelPages.currentPage+1}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
             </ul>
             <ul class="god-aside-list1">
                 <h2 class="god-aside-tit">热门推荐</h2>

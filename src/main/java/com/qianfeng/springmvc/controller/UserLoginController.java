@@ -9,7 +9,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
+/**
+ *
+ * 功能描述: 用户登录控制器
+ *
+ * @auther: werson
+ * @date:  2018/09/11
+ */
 @Controller
 public class UserLoginController {
 
@@ -23,7 +31,7 @@ public class UserLoginController {
     }
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public String login(RedirectAttributes model, HttpServletRequest req){
+    public String login(RedirectAttributes model, HttpServletRequest req, HttpSession session){
         String vcode = (String) req.getSession().getAttribute("code");
         String user_vcode = req.getParameter("vcode");
         String user_tel=req.getParameter("user_tel");
@@ -37,6 +45,8 @@ public class UserLoginController {
             return "redirect:/welcome";
         }
         if(user!=null){
+            //Session保存登录用户的user_id
+            session.setAttribute("user_id_ses",user.getUser_id());
             return "index";
         }else{
             model.addFlashAttribute("msg", "账号或密码有误");
@@ -44,5 +54,9 @@ public class UserLoginController {
         }
     }
 
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public String index(){
+        return "index";
+    }
 
 }

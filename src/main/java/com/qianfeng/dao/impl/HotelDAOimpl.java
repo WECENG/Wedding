@@ -3,6 +3,7 @@ package com.qianfeng.dao.impl;
 import com.qianfeng.dao.HotelDAO;
 import com.qianfeng.pojo.Hotel;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -28,5 +29,12 @@ public class HotelDAOimpl implements HotelDAO {
     public List<Hotel> selectAllHotels() throws SQLException{
         QueryRunner runner = new QueryRunner(dataSource);
         return runner.query("select * from tb_hotel",new BeanListHandler<>(Hotel.class));
+    }
+
+    @Override
+    public Hotel selectHotelByHotel_id(int hotel_id) throws SQLException {
+        QueryRunner runner = new QueryRunner(dataSource);
+        return runner.query("select * from tb_hotel where hotel_id=?",
+                new BeanHandler<>(Hotel.class),hotel_id);
     }
 }

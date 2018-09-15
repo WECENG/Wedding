@@ -46,7 +46,7 @@
                 </div>
             </li>
             <li><span class="use-hr"></span></li>
-            <li><a href="#">我的购物车</a></li>
+            <li><a href="/queryCart?user_id=${sessionScope.user_id_ses}">我的购物车</a></li>
             <li><span class="use-hr"></span></li>
             <li>
                 <div class="use-layout">
@@ -99,8 +99,8 @@
     <div class="layout_center layout_clear">
         <div class="button layout_fl">全部分类</div>
         <ul class="layout_clear layout_fl fl_li">
-            <li><a href="http://">首页</a></li>
-            <li><a href="storePage?currentPage=1">婚宴场地</a></li>
+            <li><a href="/index">首页</a></li>
+            <li><a href="hotelPage?currentPage=0">婚宴场地</a></li>
             <li><a href="http://">婚纱摄影</a></li>
             <li><a href="http://">婚庆用车</a></li>
             <li><a href="http://">婚庆公司</a></li>

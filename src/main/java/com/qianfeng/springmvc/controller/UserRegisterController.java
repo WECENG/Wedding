@@ -4,12 +4,23 @@ import com.qianfeng.pojo.User;
 import com.qianfeng.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
+/**
+ *
+ * 功能描述: 用户注册控制器
+ *
+ * @auther: werson
+ * @date:  2018/09/11
+ */
 @Controller
 public class UserRegisterController {
     @Autowired
@@ -37,6 +48,19 @@ public class UserRegisterController {
             user.setUser_password(password);
             userService.register(user);
             return "redirect:/welcome";
+        }
+    }
+
+    @RequestMapping(value = "/ajaxValidate",method = RequestMethod.POST)
+    public void ajaxValidate(HttpServletRequest req, HttpServletResponse resp)
+                            throws IOException {
+        String user_tel=req.getParameter("user_tel");
+        if(userService.findUserByuser_tel(user_tel)!=null){
+            resp.setCharacterEncoding("utf-8");
+            resp.setContentType("application/text");
+            PrintWriter out=resp.getWriter();
+            out.println("电话号码已存在");
+            out.close();
         }
     }
 }
