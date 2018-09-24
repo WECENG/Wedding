@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.HotelPackage;
 import org.apache.ibatis.annotations.Select;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
  * @Date: 2018/9/13/013 20:54
  * @Description:    酒店套餐详情数据访问层
  */
-public interface HotelPackageDetailsDAO {
+public interface HotelPackageDetailsMapper {
     /**
      *
      * 功能描述: 通过酒店套餐id查询酒店套餐详情

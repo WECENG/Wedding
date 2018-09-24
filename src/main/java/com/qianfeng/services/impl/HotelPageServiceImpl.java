@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.mybatis.dao.HotelPageDAO;
+import com.qianfeng.mybatis.mapper.HotelPageMapper;
 import com.qianfeng.pojo.Hotel;
 import com.qianfeng.pojo.Page;
 import com.qianfeng.services.HotelPageService;
@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class HotelPageServiceImpl implements HotelPageService {
     @Autowired
-    HotelPageDAO hotelPageDAO;
+    HotelPageMapper hotelPageDAO;
     @Override
     public Page<Hotel> findHotelPage(int currentPage,int pageSize) {
         List<Hotel> hotels=hotelPageDAO.selectHotelPage(currentPage*pageSize,pageSize);

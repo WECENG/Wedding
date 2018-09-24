@@ -20,7 +20,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "OrderDAO{" +
+        return "OrderMapper{" +
                 "order_id=" + order_id +
                 ", order_num=" + order_num +
                 ", user_id='" + user_id + '\'' +

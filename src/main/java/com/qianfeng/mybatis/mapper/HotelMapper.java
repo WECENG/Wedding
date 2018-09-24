@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.Hotel;
 import org.apache.ibatis.annotations.Insert;
@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface HotelDAO {
+public interface HotelMapper {
     /**
      *
      * 功能描述:添加hotel

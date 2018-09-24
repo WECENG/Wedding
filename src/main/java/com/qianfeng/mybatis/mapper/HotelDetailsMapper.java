@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.HotelDetails;
 import com.qianfeng.pojo.HotelPackage;
@@ -13,7 +13,7 @@ import java.util.List;
  * @Date: 2018/9/13/013 10:27
  * @Description:    酒店详情数据访问层
  */
-public interface HotelDetailsDAO {
+public interface HotelDetailsMapper {
     /**
      *
      * 功能描述: 查询所有酒店详情

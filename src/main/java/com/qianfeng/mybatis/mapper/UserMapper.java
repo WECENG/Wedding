@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.User;
 import org.apache.ibatis.annotations.Delete;
@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
-public interface UserDAO {
+public interface UserMapper {
     /**
      * 添加用户
      * @param user

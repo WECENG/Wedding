@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.Cart;
 import org.apache.ibatis.annotations.Delete;
@@ -14,7 +14,7 @@ import java.util.List;
  * @Date: 2018/9/14/014 14:16
  * @Description:    购物车数据访问层
  */
-public interface CartDAO {
+public interface CartMapper {
     /**
      *
      * 功能描述: 通过用户id查询购物车集合

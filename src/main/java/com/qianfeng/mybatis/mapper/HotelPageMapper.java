@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.Hotel;
 import org.apache.ibatis.annotations.Select;
@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Select;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface HotelPageDAO {
+public interface HotelPageMapper {
     /**
      *
      * 功能描述:查询单一分页的hotel集合

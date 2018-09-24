@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.mybatis.dao.UserDAO;
+import com.qianfeng.mybatis.mapper.UserMapper;
 import com.qianfeng.pojo.User;
 import com.qianfeng.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    UserDAO userDAO;
+    UserMapper userDAO;
     @Override
     public User login(String userTel, String password) {
         User user=userDAO.selectUserByTel(userTel);

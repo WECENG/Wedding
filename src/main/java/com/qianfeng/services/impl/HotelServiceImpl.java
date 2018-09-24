@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.mybatis.dao.HotelDAO;
+import com.qianfeng.mybatis.mapper.HotelMapper;
 import com.qianfeng.pojo.Hotel;
 import com.qianfeng.services.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class HotelServiceImpl implements HotelService {
     @Autowired
-    HotelDAO hotelDAO;
+    HotelMapper hotelDAO;
     @Override
     public void addHotel(Hotel hotel) throws SQLException {
         hotelDAO.addHotel(hotel);

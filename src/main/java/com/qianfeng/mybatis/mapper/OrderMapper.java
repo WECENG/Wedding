@@ -1,4 +1,4 @@
-package com.qianfeng.mybatis.dao;
+package com.qianfeng.mybatis.mapper;
 
 import com.qianfeng.pojo.Order;
 import org.apache.ibatis.annotations.Select;
@@ -11,7 +11,7 @@ import java.util.List;
  * @Date: 2018/9/14/014 15:36
  * @Description:    订单详情数据访问层
  */
-public interface OrderDAO {
+public interface OrderMapper {
     /**
      *
      * 功能描述: 通过用户id查询订单集合

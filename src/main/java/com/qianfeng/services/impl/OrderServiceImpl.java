@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.mybatis.dao.OrderDAO;
+import com.qianfeng.mybatis.mapper.OrderMapper;
 import com.qianfeng.pojo.Order;
 import com.qianfeng.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.util.List;
 @Service
 public class OrderServiceImpl implements OrderService {
     @Autowired
-    OrderDAO orderDAO;
+    OrderMapper orderDAO;
 
     @Override
     public List<Order> findOrdersByUser_id(int user_id) throws SQLException {

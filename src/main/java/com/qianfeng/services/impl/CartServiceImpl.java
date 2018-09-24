@@ -1,8 +1,7 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.mybatis.dao.CartDAO;
+import com.qianfeng.mybatis.mapper.CartMapper;
 import com.qianfeng.pojo.Cart;
-import com.qianfeng.pojo.Order;
 import com.qianfeng.services.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +17,7 @@ import java.util.List;
 @Service
 public class CartServiceImpl implements CartService {
     @Autowired
-    CartDAO cartDAO;
+    CartMapper cartDAO;
 
     @Override
     public List<Cart> findCartByUser_id(int user_id) throws SQLException {

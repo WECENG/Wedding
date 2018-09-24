@@ -1,6 +1,6 @@
 package com.qianfeng;
 
-import com.qianfeng.mybatis.dao.UserDAO;
+import com.qianfeng.mybatis.mapper.UserMapper;
 import com.qianfeng.pojo.User;
 import com.qianfeng.springboot.SpringBootApp;
 import org.junit.Test;
@@ -15,7 +15,7 @@ import java.util.List;
 @SpringBootTest(classes=SpringBootApp.class)
 public class DAOTest {
     @Autowired
-    UserDAO userDAO;
+    UserMapper userDAO;
 
     @Test
     public void testUserInsert(){

@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 import java.io.IOException;
 
 @Configuration
-@MapperScan("com.qianfeng.mybatis.dao")
+@MapperScan("com.qianfeng.mybatis.mapper")
 public class MybatisConfig {
     @Bean
     public SqlSessionFactoryBean sqlSessionFactory(DataSource dataSource) throws IOException {

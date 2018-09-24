@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.mybatis.dao.HotelDetailsDAO;
+import com.qianfeng.mybatis.mapper.HotelDetailsMapper;
 import com.qianfeng.pojo.HotelDetails;
 import com.qianfeng.pojo.HotelPackage;
 import com.qianfeng.pojo.HotelRoom;
@@ -19,7 +19,7 @@ import java.util.List;
 @Service
 public class HotelDetailsServiceImpl implements HotelDetailsService {
     @Autowired
-    HotelDetailsDAO hotelDetailsDAO;
+    HotelDetailsMapper hotelDetailsDAO;
 
     @Override
     public List<HotelDetails> findAllHotelDetails() throws SQLException {
