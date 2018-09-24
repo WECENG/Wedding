@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7fe1436-bb72-4df5-983f-ce677fed71e4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/config/MybatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/CartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/HotelMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelDetailsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelDetailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/HotelDetailsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelPackageDetailsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelPackageDetailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/HotelPackageDetailsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/HotelPageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/HotelPageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/OrderDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/pojo/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelPackageDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelPackageDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelPageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelPageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/HotelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qianfeng/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qianfeng/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qianfeng/DAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -229,7 +208,7 @@
     <property name="SearchEverywhereHistoryKey" value="maven project&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mybatis-Spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -386,7 +365,7 @@
       <workItem from="1537061766072" duration="1043000" />
       <workItem from="1537234091734" duration="726000" />
       <workItem from="1537760732876" duration="149000" />
-      <workItem from="1537767708491" duration="8094000" />
+      <workItem from="1537767708491" duration="8269000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1536742304968</created>
@@ -416,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537778688790</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SSM">
+      <created>1537779078193</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537779078193</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -425,7 +411,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116260000" />
+    <option name="totallyTimeSpent" value="116435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
