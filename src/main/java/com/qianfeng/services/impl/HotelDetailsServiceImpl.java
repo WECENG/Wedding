@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.dao.HotelDetailsDAO;
+import com.qianfeng.mybatis.dao.HotelDetailsDAO;
 import com.qianfeng.pojo.HotelDetails;
 import com.qianfeng.pojo.HotelPackage;
 import com.qianfeng.pojo.HotelRoom;

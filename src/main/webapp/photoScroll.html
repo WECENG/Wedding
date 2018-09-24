@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoScroll</title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0px;padding: 0px;
+    }
+    #container{
+        width: 780px;height: 455px;
+        position: relative;
+    }
+    #marquee{
+        width: 100%;
+        height: 100%;
+        /*隐藏溢出*/
+        overflow: hidden;
+    }
+    #images{
+        width: 3905px;
+        height: 100%;
+        margin: 0;
+    }
+    #images img{
+        width: 780px;
+        height: 455px;
+        margin: 0px;
+    }
+    #container ul{
+        list-style: none;
+        /*设置定位*/
+        position: absolute;
+        left: 350px;
+        bottom: 10px;
+    }
+    #container li{
+        float: left;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: gray;
+        margin-left: 5px;
+    }
+    .button{
+        width: 80px;
+        height: 47px;
+        position: absolute;
+        background-color: #000000;
+        /*透明度*/
+        opacity: 0.2;
+        top: 200px;
+    }
+    #left_button{
+        left: 0px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    #right_button{
+        right: 0px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .arrow{
+        width: 100%;
+        height: 100%;
+        background: url("images/oeD55470539oS.jpg") no-repeat;
+    }
+    #left_arrow{
+        background-position: -102px -111px;
+    }
+    #right_arrow{
+        background-position: -100px -48px;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="marquee">
+            <div id="images">
+                <img src="/images/1453441634.jpg"><img src="images/OIl61434592QN.jpg">
+                <img src="images/qRJ62017428zY.jpg"><img src="images/tfs58753019wI.jpg"><img src="/images/1453441634.jpg">
+            </div>
+        </div>
+        <ul id="dots">
+            <li></li><li></li><li></li><li></li>
+        </ul>
+        <div class="button" id="left_button">
+            <div class="arrow" id="left_arrow"></div>
+        </div>
+        <div class="button" id="right_button">
+            <div class="arrow" id="right_arrow"></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var marquee=document.getElementById("marquee");
+    var images=document.getElementById("images");
+    var interval;
+    var dots=document.getElementById("dots").childNodes;
+    var currentIndex=1;
+    var oldIndex=0;
+    function photoScroll() {
+        if(marquee.scrollLeft % marquee.offsetWidth==0){
+            //滚完一个图停2s
+            clearInterval(interval);
+            setTimeout("intervalScroll()",2000);
+
+            //修改原点颜色
+            dots.item(currentIndex).style.backgroundColor = "#ff0000";
+
+            if(oldIndex!=0){
+                dots.item(oldIndex).style.backgroundColor = "#cccccc";
+            }
+            oldIndex=currentIndex;
+            currentIndex++;
+        }
+
+        marquee.scrollLeft++;
+
+        /*回滚*/
+        if(marquee.scrollLeft>=images.offsetWidth-5-marquee.offsetWidth){
+            marquee.scrollLeft=0;
+            currentIndex=1;
+        }
+    }
+    function intervalScroll(){
+        interval=setInterval("photoScroll()",1);
+    }
+    intervalScroll();
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.dao.HotelDAO;
+import com.qianfeng.mybatis.dao.HotelDAO;
 import com.qianfeng.pojo.Hotel;
 import com.qianfeng.services.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;

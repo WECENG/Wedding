@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.dao.OrderDAO;
+import com.qianfeng.mybatis.dao.OrderDAO;
 import com.qianfeng.pojo.Order;
 import com.qianfeng.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;

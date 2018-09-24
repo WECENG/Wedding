@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.dao.UserDAO;
+import com.qianfeng.mybatis.dao.UserDAO;
 import com.qianfeng.pojo.User;
 import com.qianfeng.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

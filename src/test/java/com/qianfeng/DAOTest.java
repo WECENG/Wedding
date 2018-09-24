@@ -1,6 +1,6 @@
 package com.qianfeng;
 
-import com.qianfeng.dao.UserDAO;
+import com.qianfeng.mybatis.dao.UserDAO;
 import com.qianfeng.pojo.User;
 import com.qianfeng.springboot.SpringBootApp;
 import org.junit.Test;

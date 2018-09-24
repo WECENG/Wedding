@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>palneBattle</title>
+</head>
+<style type="text/css">
+    #bg {
+        width: 500px;
+        height: 800px;
+        background: url(img/background_1.png) no-repeat;
+        /*position: absolute;*/
+        /*margin: 0px auto;*/
+    }
+
+    #plane{
+        width: 66px;
+        height: 80px;
+        position: absolute;
+    }
+</style>
+<body>
+<div id="bg" onmousemove="movePlane()">
+    <img id="plane" src="img/plane.gif">
+</div>
+<script type="text/javascript">
+    var bg=document.getElementById("bg");
+    var plane=document.getElementById("plane");
+    var x,y;
+    function movePlane() {
+        /*获取鼠标位置*/
+        x=window.event.clientX;
+        y=window.event.clientY;
+        /*控制飞机的位置*/
+        if(x>=0&&x<bg.offsetWidth&&y>=0&&y<bg.offsetWidth){
+            plane.style.left=(x-plane.offsetWidth/2)+"px";
+            plane.style.top=(y-plane.offsetHeight/2)+"px";
+        }
+    }
+
+    /*子弹数组*/
+    var bullets=new Array();
+
+        /*子弹*/
+    function Bullet(x,y) {
+        /*创建img对象*/
+        var img=document.createElement("img");
+        /*将img对象添加到游戏背景上*/
+        bg.appendChild(img);
+        img.src="img/bullet1.png";
+        img.style.position="absolute";
+        img.style.width="6px";
+        img.style.height="14px";
+        img.style.left=x+"px";
+        img.style.top=y+"px";
+        this.width=6;
+        this.height=14;
+        this.x=x;
+        this.y=y;
+        this.move=function () {
+            this.y-=10;
+            img.style.top=this.y+"px";
+        }
+        this.remove=function () {
+            bg.removeChild(img);
+        }
+    }
+
+    /*敌人数组*/
+    var enemys=new Array();
+
+        /*敌人类*/
+    function Enemy(x,y) {
+        /*创建img对象*/
+        var img=document.createElement("img");
+        /*将img对象添加到游戏背景上*/
+        bg.appendChild(img);
+        img.src="img/enemy1_fly_1.png";
+        img.style.position="absolute";
+        img.style.width="34px";
+        img.style.height="24px";
+        img.style.left=x+"px";
+        img.style.top=y+"px";
+        this.width=34;
+        this.height=24;
+        this.x=x;
+        this.y=y;
+        this.isDead=false;
+        this.move=function () {
+            this.y+=10;
+            img.style.top=this.y+"px";
+        }
+        this.remove=function () {
+            bg.removeChild(img);
+        }
+        this.dead=function () {
+            img.src="img/boom.png";
+            this.isDead=true;
+        }
+    }
+
+    /*创建子弹*/
+    function createBullet() {
+        bullets.push(new Bullet(x,y-plane.offsetHeight/2));
+    }
+
+    /*创建敌人*/
+    function createEnemy() {
+        enemys.push(new Enemy(bg.offsetWidth*Math.random(),0));
+    }
+
+    /*移动所有子弹*/
+    function moveBullets() {
+        for (var i=0;i<bullets.length;i++) {
+            bullets[i].move();
+            /*消灭敌人*/
+            checkHit(bullets[i]);
+            if(bullets[i].y<=0){
+                /*删除子弹图片*/
+                bullets[i].remove();
+                /*删除子弹数组*/
+                bullets.splice(i,1);
+            }
+        }
+    }
+
+    /*移动所有敌人*/
+    function moveEnemy() {
+        for (var i=0;i<enemys.length;i++) {
+            enemys[i].move();
+            if(enemys[i].y>=bg.offsetHeight||enemys[i].isDead){
+                /*删除子弹图片*/
+                enemys[i].remove();
+                /*删除子弹数组*/
+                enemys.splice(i,1);
+            }
+        }
+    }
+
+    /*消灭敌人*/
+    function checkHit(bullet){
+        for(var i=0;i<enemys.length;i++){
+            if(bullet.x>enemys[i].x&&bullet.x+bullet.width<enemys[i].x+enemys[i].width&&
+                bullet.y>enemys[i].y&&bullet.y+bullet.height<enemys[i].y+enemys[i].height){
+                // enemys[i].remove();
+                // enemys.splice(i,1);
+                enemys[i].dead();
+            }
+        }
+    }
+
+    setInterval("createBullet()",200);
+
+    setInterval("moveBullets()",100);
+
+    setInterval("createEnemy()",1000);
+
+    setInterval("moveEnemy()",200);
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 package com.qianfeng.services.impl;
 
-import com.qianfeng.dao.CartDAO;
+import com.qianfeng.mybatis.dao.CartDAO;
 import com.qianfeng.pojo.Cart;
 import com.qianfeng.pojo.Order;
 import com.qianfeng.services.CartService;

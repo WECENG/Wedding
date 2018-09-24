@@ -31,3 +31,15 @@
             
 关于前端访问路径与后台设置路径不一致问题
     1.可能由于浏览器缓存导致
+
+Js笔记
+    1、获取标签属性值 Document.getElenmentById().value
+    2、为属性赋值 XXX.innerHTML=???
+    3、js修改a标签的href属性    XXX.href=???
+    4、js为标签添加样式
+                img.src="img/enemy1_fly_1.png";
+                img.style.position="absolute";
+                img.style.width="34px";
+                img.style.height="24px";
+                img.style.left=x+"px";
+                img.style.top=y+"px";
